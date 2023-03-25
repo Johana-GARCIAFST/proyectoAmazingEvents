@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/eb868c2dff.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/home.css">
+ <link rel="icon" href="./Recursos AE/Logos/favicon.png">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark colorspink fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"> <img class="fotologo" src="./img/Logo Amazing Events.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end colorspinkdark " tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <img class="fotologo" src="./img/Logo Amazing Events.png" alt="">
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active cachorrita" aria-current="page" href="#" id="home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link cachorrita" href="#" id="upcoming">Upcoming Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cachorrita" href="#" id="past">Past Events</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./html/Contact.html">Contact</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./html/Stats.html">Stats</a>
+                      </li>
+            
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <div class="Home">
+        <a href="./html/Stats.html" id="home"><i class="fa-solid fa-chevron-left"></i></a>
+        <h1>Home</h1>
+        <a href="./html/Contact.html"><i class="fa-solid fa-chevron-right"></i></a>
+    </div>
+    <main class="container">
+        <section class="SeccionUno">
+            <form action="" method="post">
+                <ul>
+                    <li>
+
+                        <input type="checkbox" name="Uno" id="Uno">
+                        <label for="Uno">Category</label>
+
+                    </li>
+                    <li>
+
+                        <input type="checkbox" name="Dos" id="Dos">
+                        <label for="Dos">Category</label>
+
+                    </li>
+                    <li>
+
+                        <input type="checkbox" name="tres" id="Tres">
+                        <label for="Tres">Category</label>
+
+                    </li>
+                    <li>
+
+                        <input type="checkbox" name="cuatro" id="Cuatro">
+                        <label for="Cuatro">Category</label>
+
+                    </li>
+                    <li>
+
+                        <input type="checkbox" name="cinco" id="Cinco">
+                        <label for="Cinco">Category</label>
+
+                    </li>
+                </ul>
+                <div>
+                    <input  type="search" name="buscar" id="submit">
+                   <button class="enviar" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </form>
+
+        </section>
+        <section class="SeccionDos">
+            <ul class="tarjetas" id="tarjetas">
+               
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <ul>
+                <li><a target="_blank" href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a target="_blank" href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a target="_blank" href=""><i class="fa-solid fa-envelope"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <p>Cohort</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./js/AmazingEvents.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-decoration: none  ;
+}
+.navbar{
+   height: 10vh;
+}
+.colorspink{
+    background-color: pink;
+}
+.colorspinkdark{
+    background-color: rgb(247, 156, 171);
+}
+
+/* header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: pink;
+ 
+
+} */
+
+/* header picture{
+    width: 30%;
+} */
+.fotologo{
+    width: 200px;
+
+}
+
+/* header ul {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    flex-wrap: wrap;
+}
+
+header ul li {
+    padding: 10px;
+    background-color: rgba(235, 80, 132, 0.468);
+    border-radius: 5px;
+    border: 2px black solid;
+    box-shadow: 2px 2px 2px black;
+
+
+}
+
+li a {
+    color: black;
+    font-size: 1em;
+    font-weight: bolder;
+    padding: 12px;
+} */
+
+.Home {
+    width: 100%;
+    height: 10vh;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background:linear-gradient(to left, transparent 20% , rgba(235, 80, 132, 0.468));
+
+}
+.Home h1 {
+    font-size: 4em;
+}
+
+.Home i {
+    font-size: 2em;
+    color:rgba(173, 6, 61, 0.923);
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+
+}
+.SeccionUno{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.SeccionUno form {
+    width: 100%;
+    height: auto;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.SeccionUno ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.SeccionUno li {
+    margin-left: 10px;
+}
+.enviar {
+    width: 40px;
+    background-color: rgba(235, 80, 132, 0.468);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.SeccionDos {
+    width: 100%;
+    height: auto;
+    min-height: 45vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.tarjetas {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.tarjetas li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 350px;
+    border: rgba(235, 80, 132) solid 3px;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+.tarjetas img{
+    width:100%;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+.tarjetabaja{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.tarjetabaja input{
+    width: 80px;
+    background-color: rgba(235, 80, 132, 0.468);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+}
+h2{
+    font-size: 1.2em;
+}
+
+
+
+footer{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: pink;
+}
+footer div{
+    height: 100%
+}
+footer ul{
+    width: 50%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    
+}
+footer i{
+    font-size: 3em;
+    color: rgba(173, 6, 61, 0.923);
+}
+footer p{
+    padding-right: 20px;
+    font-size: 2.5em;
+    color: rgba(173, 6, 61, 0.923);
+}
+@media screen and (max-width:900px) {
+    form div{
+       margin-left: 30%;
+    }
+    .SeccionDos{
+        margin-top: 20px;
+    }
+    .SeccionUno label{
+        font-size: 10px;
+    }
+    footer{
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: pink;
+    }
+    footer{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: pink;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+    }
+}
