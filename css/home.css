@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     list-style-type: none;
-    text-decoration: none  ;
+    text-decoration: none;
 }
 .navbar{
    height: 10vh;
@@ -14,7 +14,7 @@
     background-color: rgb(247, 156, 171);
 }
 
-/* header {
+header {
     width: 100%;
     height: auto;
     display: flex;
@@ -24,17 +24,30 @@
     background-color: pink;
  
 
-} */
+} 
+#submit{
+width: 30vw;
+border-radius: 8px;
+background-color:pink;
+}
+#submit:focus{
+    background-color: white;
+}
 
-/* header picture{
+ header picture{
     width: 30%;
-} */
+} 
 .fotologo{
     width: 200px;
 
 }
+.navbar-toggler{
+    display: none;
+    
+}
 
-/* header ul {
+
+header .barranav {
     width: 70%;
     height: 100%;
     display: flex;
@@ -45,22 +58,60 @@
     flex-wrap: wrap;
 }
 
-header ul li {
+header .barranav li {
     padding: 10px;
     background-color: rgba(235, 80, 132, 0.468);
     border-radius: 5px;
-    border: 2px black solid;
-    box-shadow: 2px 2px 2px black;
+    border: 1px black solid;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.548);
 
 
 }
+#titulo{
+    font-size: 3em;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
 
 li a {
     color: black;
     font-size: 1em;
     font-weight: bolder;
     padding: 12px;
-} */
+    text-decoration:none;
+}
 
 .Home {
     width: 100%;
@@ -88,33 +139,19 @@ li a {
     min-height: 70vh;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 
 }
 .SeccionUno{
-    display: flex;
-    flex-direction: column;
-
-}
-
-.SeccionUno form {
     width: 100%;
     height: auto;
-    min-height: 10vh;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+
 }
 
-.SeccionUno ul {
-    display: flex;
-    flex-direction: row;
-}
-
-.SeccionUno li {
-    margin-left: 10px;
-}
 .enviar {
     width: 40px;
     background-color: rgba(235, 80, 132, 0.468);
@@ -144,18 +181,24 @@ li a {
     row-gap: 30px;
 }
 
-.tarjetas li {
+.targetUnic{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
     width: 250px;
     height: 350px;
     border: rgba(235, 80, 132) solid 3px;
-    box-shadow: 2px 2px 4px black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     text-align: center;
-    
+    transition: all 0.3s ease, 0.3s ease;
+}
+.targetUnic:hover{
+    width: 252px;
+    box-shadow: 2px 2px 4px black;
+     transform: translateX(-2px);
 }
 
 .tarjetas img{
@@ -211,10 +254,15 @@ footer i{
 }
 footer p{
     padding-right: 20px;
-    font-size: 2.5em;
+    font-size: 1em;
     color: rgba(173, 6, 61, 0.923);
 }
-@media screen and (max-width:900px) {
+@media screen and (max-width:1080px) {
+    .container {
+
+        margin-bottom: 120px;
+    }
+    
     form div{
        margin-left: 30%;
     }
@@ -245,4 +293,23 @@ footer p{
         bottom: 0px;
         right: 0px;
     }
+    .navbar-toggler{
+        display:initial;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        
+    }
+    .barranav{
+        visibility: hidden;
+    }
+    
 }
+
+@media screen and (max-width:1080px) {
+
+
+
+
+}
+

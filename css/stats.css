@@ -1,5 +1,5 @@
 table{
-    width: auto;
+    width: 100%;
     height: auto;
     border: 2px black solid;
 
@@ -15,8 +15,8 @@ table td{
     font-weight: bolder;
 }
 th{
-    background-color: black;
-    color: white;
+    background-color:rgba(235, 80, 132);
+    color: black;
 }
 main{
     height: 70vh;

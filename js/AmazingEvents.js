@@ -23,7 +23,7 @@ var dataAmazing ={
       "place": "Campo",
       "capacity": 82000,
       "assistance":65892,
-      "price": 15
+      "price": 15,
     },
     {
       "id": 3,
@@ -59,7 +59,8 @@ var dataAmazing ={
       "place": "Campo de Futból",
       "capacity": 30000,
       "assistance":25698,
-      "price": 3
+      "price": 3,
+      
     },
     {
       "id": 6,
@@ -85,6 +86,6 @@ var dataAmazing ={
       "estimate":9000,
       "price": 250
     }
-    
+
   ]
 }
