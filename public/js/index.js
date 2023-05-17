@@ -7,10 +7,10 @@ var arrayAfiltrar = []
 var arrayNav = []
 let search = ""
 var tiempo = location.search.split("?tiempo=")
-var buttonNav = document.getElementsByClassName("cachorrita")
+var buttonNav = document.getElementsByClassName("buttonNavegation")
 var buscador = document.getElementById("submit");
-var buttonD = document.getElementById("flechaDerecha")
-var buttonI = document.getElementById("flechaIzquierda")
+
+
 var contenedorBusqueda = document.getElementById("buscador")
 let cardTarjeta = document.getElementById("tarjetas")
 
@@ -30,8 +30,8 @@ async function getData() {
   eventosFuturos.push(...eventosApi.filter(evento => evento.date > fechaBaseApi))
   eventosPasados.push(...eventosApi.filter(evento => evento.date < fechaBaseApi))
   display(eventos)
-  eventsCategories(eventos)
-  
+   eventsCategories(eventos)
+   recorrePage()
 }
 getData()
 
@@ -48,8 +48,6 @@ for (i = 0; i < buttonNav.length; i++) {
   })
 }
 
-console.log(arrayNav);
-
 
 function imprimir(id) {
   console.log(id);
@@ -62,7 +60,6 @@ function imprimir(id) {
       buscador.value = ""
       arrayAfiltrar = eventosFuturos
       display(eventosFuturos)
-      console.log(arrayAfiltrar);
       break;
     case "past":
       document.getElementById("titulo").innerHTML = "Past"
@@ -209,7 +206,7 @@ function display(array) {
 imprimir(eventos)
 
 
-
+function recorrePage (){
 switch (tiempo[1]) {
   case "past":
     imprimir("past")
@@ -226,7 +223,7 @@ switch (tiempo[1]) {
   default:
     imprimir("home")
 
-}
+}}
 buscador.addEventListener("keyup", function (evento) {
   var datoInput = evento.target.value
   search = datoInput.trim().toLowerCase()
@@ -311,13 +308,13 @@ function filtrosFusionados() {
 // <=======flechas====>
 
 
-
+var buttonD = document.getElementById("flechaDerecha")
 buttonD.addEventListener("click", function (e) {
   var pagina = document.getElementById("titulo").innerText
   if (arrayNav.indexOf(pagina) < 4) {
     flechaDerecha(arrayNav.indexOf(pagina) + 1);
   } else {
-    flechaIzquierda(0)
+    flechaDerecha(0)
   }
 })
 
@@ -344,7 +341,7 @@ function flechaDerecha(i) {
   }
 }
 
-
+var buttonI = document.getElementById("flechaIzquierda")
 buttonI.addEventListener("click", function (e) {
   var pagina = document.getElementById("titulo").innerText
   if (arrayNav.indexOf(pagina) <= 4) {
@@ -518,7 +515,7 @@ console.log(eventoMenorAsistencia);
   <tr>
     <td>${evento.categoria}</td>
     <td>$${evento.estimacionIngresos}</td>
-    <td>%${evento.porcentajeDeEstimacion}</td>  
+    <td>${evento.porcentajeDeEstimacion}</td>  
   </tr>
     
     
@@ -543,7 +540,7 @@ console.log(eventoMenorAsistencia);
   <tr>
     <td>${evento.categoria}</td>
     <td>$${evento.ingresos}</td>
-    <td>%${evento.porcentajeDeAsistencia}</td>  
+    <td>${evento.porcentajeDeAsistencia}</td>  
   </tr>
     
     

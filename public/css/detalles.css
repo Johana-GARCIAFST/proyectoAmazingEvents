@@ -1,0 +1,111 @@
+.detalles{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.detallesContainer{
+    width: 50%;
+    height: 400px;
+    min-width: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    background-color: rgba(255, 255, 255, 0.712);
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+}
+.detallesContainer picture img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    
+    
+}
+.detallesContainer div{
+    width: 300px;
+    height:300px;
+    min-width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.74);
+    text-align: center;
+}
+.detallesContainer p{
+    font-size: 1em;
+    margin-bottom: 4px;
+}
+
+
+
+@media screen and (max-width:1245px) {
+
+    .detallesContainer picture img{
+        width: 300px;
+        height: 250px;
+        border-radius: 10px;
+    }
+    .detallesContainer div{
+        width: 300px;
+        height:250px;
+        min-width: 250px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.74);
+        text-align: center;
+    }
+    .detallesContainer{
+        width: 50%;
+        height: 85%;
+        min-width: 300px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+        background-color: rgba(255, 255, 255, 0.712);
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+
+}
+
+@media screen and (max-width:400px) {
+
+    .detallesContainer picture img{
+       
+        height: 200px;}
+
+        .detallesContainer div{
+            height: 200px;
+
+        }
+
+        .detallesContainer p{
+            font-size: 0.8em;
+            margin-bottom: 4px;
+        }
+
+        .detallesContainer{
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+            height: fit-content;
+        
+        }
+
+}

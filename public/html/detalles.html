@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,79 +8,65 @@
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/home.css">
-    <link rel="stylesheet" href="./css/contactos.css">
-    <link rel="stylesheet" href="./css/stats.css">
- <link rel="icon" href="./Recursos AE/Logos/favicon.png">
-    <title>Home</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/detalles.css">
+    <link rel="icon" href="../Logos/favicon.png">
+    <title>Document</title>
 </head>
-
 <body>
     <header>
-      
         <nav class="navbar navbar-dark colorspink fixed-top">
             <div class="container-fluid">
-              <a class="navbar-brand" href="./index.html"> <img class="fotologo" src="./Recursos AE/Logos/Logo Amazing Events.png" alt=""></a>
+              <a class="navbar-brand" href="../index.html"> <img class="fotologo" src="../Logos/LogoAmazingEvents.png" alt=""></a>
               <ul class="barranav">
-                <li><a  class="cachorrita" href="#"id="home">Home</a></li>
-                <li><a  class="cachorrita" href="#" id="upcoming">Upcoming Events</a></li>
-                <li><a  class="cachorrita" href="#"  id="past">Past Events</a></li>
-                <li><a  class="cachorrita" href="#"  id="contacts">Contact</a></li>
-                <li><a  class="cachorrita" href="#"  id="stats" >Stats</a></li>
+                <li><a  href="../index.html" class="buttonNavegation" id="home">Home</a></li>
+                <li><a href="../index.html?tiempo=upcoming" class="buttonNavegation" id="upcoming">Upcoming Events</a></li>
+                <li><a href="../index.html?tiempo=past" class="buttonNavegation" id="past">Past Events</a></li>
+                <li><a  href="../index.html?tiempo=contacts" class="buttonNavegation" id="contacts">Contact</a></li>
+                <li><a href="../index.html?tiempo=stats" class="buttonNavegation" id="stats" >Stats</a></li>
             </ul>
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="offcanvas offcanvas-end colorspinkdark " tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                 <div class="offcanvas-header">
-                    <img class="fotologo" src="./Recursos AE/Logos/Logo Amazing Events.png" alt="">
+                    <img class="fotologo" src="../Logos/LogoAmazingEvents.png" alt="">
                   <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                      <a class="nav-link active cachorrita" aria-current="page" href="#" id="home">Home</a>
+                      <a  aria-current="page" href="../index.html" class="nav-link active buttonNavegation" id="Home">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link cachorrita" href="#" id="upcoming">Upcoming Events</a>
+                      <a  href="../index.html?tiempo=upcoming" class="nav-link buttonNavegation" id="Upcoming">Upcoming Events</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link cachorrita" href="#" id="past">Past Events</a>
+                        <a  href="../index.html?tiempo=past" class="nav-link buttonNavegation" id="Past">Past Events</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link cachorrita" href="#" id="contacts">Contact</a>
+                        <a  href="../index.html?tiempo=contacts" class="nav-link buttonNavegation" id="Contacts">Contact</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link cachorrita" href="#" id="stats">Stats</a>
+                        <a href="../index.html?tiempo=stats"  class="nav-link buttonNavegation" id="Stats">Stats</a>
                       </li>
-            
+                  </ul>
                 </div>
               </div>
             </div>
           </nav>
     </header>
     <div class="Home">
-        <a href="#" id="flechaIzquierda"><i class="fa-solid fa-chevron-left"></i></a>
-        <h1 id="titulo"></h1>
-        <a href="#" id="flechaDerecha" ><i class="fa-solid fa-chevron-right"></i></a>
+        <h1 id="titulo">Detalles</h1>
     </div>
-    <main class="container">
-        <section class="SeccionUno" id="buscador">
-          <div id="checkCategories">
+    <main class="detalles" id="detallesContainer">
+      <div class="fondo"></div>
 
-          </div>
-          <div>
-             <input  type="search" name="buscar" id="submit"  placeholder="Busca tu evento acá...">
-          </div>
-         
+        
 
-        </section>
-        <section class="SeccionDos">
-            <div class="tarjetas" id="tarjetas">
-               
-            </div>
-        </section>
+
     </main>
+   
 
     <footer>
         <div>
@@ -93,11 +78,12 @@
             </ul>
         </div>
         <div>
-            <p>ACNUR-DICIEMBRE2022 </p>
+          <p>ACNUR-DICIEMBRE2022 </p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script src="./js/index.js"></script>
-</body>
+    <script src="../js/detalles.js"></script>
+  
 
+</body>
 </html>

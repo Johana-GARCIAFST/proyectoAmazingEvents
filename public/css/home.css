@@ -26,7 +26,7 @@ header {
 
 } 
 #submit{
-width: 30vw;
+width: 25vw;
 border-radius: 8px;
 background-color:pink;
 }
@@ -47,7 +47,7 @@ background-color:pink;
 }
 
 
-header .barranav {
+ .barranav {
     width: 70%;
     height: 100%;
     display: flex;
@@ -58,7 +58,7 @@ header .barranav {
     flex-wrap: wrap;
 }
 
-header .barranav li {
+ .barranav li {
     padding: 10px;
     background-color: rgba(235, 80, 132, 0.468);
     border-radius: 5px;
@@ -66,6 +66,19 @@ header .barranav li {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.548);
 
 
+}
+
+#checkCategories{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+
+}
+
+#checkCategories label, input{
+font-size: 12px;
 }
 #titulo{
     font-size: 3em;
@@ -149,6 +162,7 @@ li a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: nowrap;
 
 }
 
@@ -274,20 +288,14 @@ footer p{
     }
     footer{
         width: 100%;
-        height: 10vh;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         background-color: pink;
-    }
-    footer{
         width: 100%;
         height: auto;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
         background-color: pink;
         position: fixed;
         bottom: 0px;
@@ -301,15 +309,39 @@ footer p{
         
     }
     .barranav{
-        visibility: hidden;
+        display: none;
+        height: 10px;
+    }
+
+    #checkCategories label, input{
+        font-size: 10px;
     }
     
 }
+@media screen and (max-width: 450px) {
+    footer i{
+        font-size: 30px;
+        color: rgba(173, 6, 61, 0.923);
+    }
 
-@media screen and (max-width:1080px) {
+    #titulo{
+        font-size: 1.8em;
+    }
+    #checkCategories label{
+        font-size: 5px;
+    }
 
-
-
+    .SeccionUno{
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+    }
+    #submit{
+        width: 40vw;
+        height: 20px;
+        margin-bottom: 5px;
+    }
+ 
 
 }
+
 
